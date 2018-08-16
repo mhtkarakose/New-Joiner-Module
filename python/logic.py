@@ -6,15 +6,13 @@
 # Note : A prime number (or a prime) is a natural number greater than 1 and that has no positive divisors other than 1 and itself. 
 def prime(n):
     # +++your code here+++
-	result = False
+	result = True
 	if n > 1:
-	   for i in range(2,n):
-	       if (n % i) == 0:
-	   	result = False
-	   else:
-	   	result= True
+		for i in range(2,n):
+			if (n % i) == 0:
+			   	result = False
 	else:
-	   result = False
+	   	result = False
    	return result
 
 
